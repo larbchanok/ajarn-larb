@@ -1,0 +1,1163 @@
+/* =====================================================
+   Fortune Booking Website
+   Version 3.0
+   ดูดวงกับ😊อ.ลาภ♑
+===================================================== */
+
+
+/* =====================================================
+   1. Color
+===================================================== */
+
+:root{
+
+    --purple:#3A1D5D;
+    --purple-dark:#25113B;
+
+    --gold:#D4AF37;
+    --gold-light:#F7E7A1;
+
+    --white:#FFFFFF;
+    --light:#FAFAFA;
+
+    --text:#333333;
+
+}
+
+
+/* =====================================================
+   2. Reset
+===================================================== */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Noto Sans Thai',sans-serif;
+
+    color:var(--text);
+
+    background:#fff;
+
+    overflow-x:hidden;
+
+}
+
+
+/* =====================================================
+   3. Link
+===================================================== */
+
+a{
+
+    text-decoration:none;
+
+}
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+/* =====================================================
+   4. Announcement
+===================================================== */
+
+.announcement-bar{
+
+    background:linear-gradient(
+        90deg,
+        var(--purple),
+        #5A2D91
+    );
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:14px 20px;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    letter-spacing:.3px;
+
+}
+/* =====================================================
+   5. Navbar
+===================================================== */
+
+.navbar{
+
+    background:#ffffffee;
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+
+    padding:16px 0;
+    position:sticky;
+top:0;
+z-index:1000;
+
+}
+
+.navbar-brand{
+
+    font-size:34px;
+
+    font-weight:700;
+
+    color:var(--purple);
+
+}
+
+.navbar-brand:hover{
+
+    color:var(--gold);
+
+}
+
+.nav-link{
+
+    color:#444;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    margin-left:18px;
+
+    transition:.3s;
+
+}
+
+.nav-link:hover{
+
+    color:var(--gold);
+
+}
+
+/* =====================================================
+   6. Hero
+===================================================== */
+
+#hero{
+
+    padding:25px 0;
+
+}
+
+#hero p{
+
+    max-width:520px;
+
+}
+/* =====================================================
+   7. Hero Typography
+===================================================== */
+
+.hero-tag{
+
+    display:inline-block;
+
+    background:#f5f0ff;
+
+    color:var(--purple);
+
+    padding:10px 22px;
+
+    border-radius:50px;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    margin-bottom:24px;
+
+}
+
+#hero h1{
+
+    font-size:68px;
+
+    font-weight:700;
+
+    color:var(--purple);
+
+    line-height:1.2;
+
+    margin-bottom:16px;
+
+}
+
+#hero h2{
+
+    font-size:44px;
+
+    font-weight:700;
+
+    color:var(--text);
+
+    line-height:1.35;
+
+    margin-bottom:24px;
+
+}
+
+#hero p{
+
+    max-width:520px;
+
+    font-size:22px;
+
+    line-height:1.9;
+
+    color:#666;
+
+    margin-bottom:32px;
+
+}
+/* =====================================================
+   8. Hero Buttons
+===================================================== */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:16px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:30px;
+
+}
+
+.btn-book{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:18px 40px;
+
+    background:var(--gold);
+
+    color:var(--white);
+
+    border-radius:50px;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    transition:all .3s ease;
+
+}
+
+.btn-book:hover{
+
+    background:var(--purple);
+
+    color:var(--white);
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px rgba(58,29,93,.20);
+
+}
+
+.btn-line{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:18px 40px;
+
+    border:2px solid var(--purple);
+
+    color:var(--purple);
+
+    border-radius:50px;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    transition:all .3s ease;
+
+}
+
+.btn-line:hover{
+
+    background:var(--purple);
+
+    color:var(--white);
+
+    transform:translateY(-3px);
+
+}
+/* =====================================================
+   9. Hero Image
+===================================================== */
+
+.hero-image{
+
+    width:100%;
+
+    max-width:560px;
+
+    height:auto;
+
+    border:none;
+
+    border-radius:0;
+
+    box-shadow:none;
+
+    display:block;
+
+    margin:0 auto;
+
+}
+/* =====================================================
+   10. Services
+===================================================== */
+
+#services{
+
+    padding:80px 0;
+
+    background:#fafafa;
+
+}
+
+.section-title{
+
+    margin-bottom:60px;
+
+}
+
+.section-title h2{
+
+    font-size:52px;
+
+    font-weight:700;
+
+    color:var(--purple);
+
+    margin-bottom:10px;
+
+}
+
+.section-title p{
+
+    color:#666;
+
+    font-size:22px;
+
+}
+
+.service-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:45px 30px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:all .35s ease;
+
+    height:100%;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-12px) scale(1.02);
+
+    box-shadow:0 18px 45px rgba(0,0,0,.15);
+    border:2px solid var(--gold);
+}
+
+.service-icon{
+
+    font-size:60px;
+
+    margin-bottom:20px;
+
+}
+
+.service-card h3{
+
+    font-size:30px;
+
+    color:var(--purple);
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+.service-card p{
+
+    color:#666;
+
+    margin-bottom:18px;
+
+}
+
+.service-card h4{
+
+    font-size:44px;
+
+    color:var(--gold);
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+}
+
+.service-card .btn-book{
+
+    width:100%;
+
+    padding:18px;
+
+    font-size:18px;
+
+}
+.service-icon img{
+
+    width:80px;
+
+    height:80px;
+
+    object-fit:contain;
+
+    margin:0 auto 18px;
+
+}.service-card p{
+
+    color:#666;
+
+    font-size:18px;
+
+    margin-bottom:18px;
+
+}#hero{
+
+    background:
+    radial-gradient(circle at top right,
+    rgba(212,175,55,.08),
+    transparent 45%),
+    radial-gradient(circle at left,
+    rgba(90,45,145,.05),
+    transparent 50%);
+
+}/* =====================================================
+   11. Booking
+===================================================== */
+
+#booking{
+
+    padding:80px 0;
+
+    background:#fff;
+
+}
+
+.booking-box{
+
+    max-width:900px;
+
+    margin:0 auto;
+
+    padding:45px;
+
+    background:#fff;
+
+    border-radius:28px;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+
+}
+
+.booking-box label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:var(--purple);
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+.booking-box .form-control,
+.booking-box .form-select{
+
+    min-height:52px;
+
+    border:1px solid #ddd;
+
+    border-radius:12px;
+
+    padding:12px 16px;
+
+    font-family:'Noto Sans Thai',sans-serif;
+
+    font-size:16px;
+
+}
+
+.booking-box textarea{
+
+    resize:vertical;
+
+}
+
+.booking-box .form-control:focus,
+.booking-box .form-select:focus{
+
+    border-color:var(--purple);
+
+    box-shadow:0 0 0 3px rgba(58,29,93,.10);
+
+}
+
+.booking-submit{
+
+    border:none;
+
+    margin-top:10px;
+
+    min-width:220px;
+
+}/* =====================================================
+   Birth Information
+===================================================== */
+
+#birth-info{
+
+    display:none;
+
+}
+
+.birth-box{
+
+    margin-top:20px;
+
+    padding:25px;
+
+    background:#fafafa;
+
+    border-radius:18px;
+
+    border:1px solid #eee;
+
+}
+
+.birth-box h3{
+
+    color:var(--purple);
+
+    font-size:24px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}/* =====================================================
+   ปฏิทินเลือกคิว 14 วัน
+   ===================================================== */
+
+.booking-calendar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-top: 15px;
+}
+
+
+/* การ์ดแต่ละวัน */
+
+.calendar-day {
+    background: #fff;
+    border: 1px solid #e8e2ef;
+    border-radius: 16px;
+    padding: 16px;
+    transition: all 0.2s ease;
+}
+
+
+/* วันที่มีคิว */
+
+.calendar-day.has-slot {
+    cursor: pointer;
+}
+
+.calendar-day.has-slot:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 18px rgba(70, 40, 100, 0.12);
+    border-color: #c9a227;
+}
+
+
+/* วันที่ไม่มีคิว */
+
+.calendar-day.no-slot {
+    background: #f8f8f8;
+    color: #999;
+}
+
+
+/* ชื่อวัน */
+
+.calendar-date {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--purple);
+    margin-bottom: 10px;
+}
+
+
+/* ข้อความไม่มีคิว */
+
+.no-slot-text {
+    font-size: 14px;
+    color: #999;
+}
+
+
+/* ปุ่มคิว */
+/* =====================================================
+   ปุ่มคิว
+   ===================================================== */
+
+.booking-slot {
+    display: block;
+    width: 100%;
+
+    margin-top: 8px;
+    padding: 10px 12px;
+
+    border: 1px solid #d8af37;
+    border-radius: 10px;
+
+    background: #fffaf0;
+    color: var(--purple);
+
+    cursor: pointer;
+
+    text-align: left;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* เมื่อเอาเมาส์วาง */
+
+.booking-slot:hover {
+    background: #d8af37;
+    color: #fff;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 12px rgba(70, 40, 100, 0.15);
+}
+
+
+/* เวลา */
+
+.booking-slot strong {
+    display: block;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    margin-bottom: 3px;
+}
+
+
+/* ชื่อบริการ */
+
+.booking-slot span {
+    display: block;
+
+    font-size: 14px;
+}
+
+
+/* ราคา */
+
+.booking-slot small {
+    display: block;
+
+    margin-top: 3px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    color: #b18a12;
+}
+
+
+/* ตอน hover ราคา */
+
+.booking-slot:hover small {
+    color: #fff;
+}
+
+
+/* =====================================================
+   Responsive
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    .booking-calendar {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.calendar-slot {
+    display: block;
+    width: 100%;
+    border: 1px solid #e4d7a5;
+    background: #fffaf0;
+    border-radius: 10px;
+    padding: 10px 12px;
+    margin-top: 8px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.calendar-slot:hover {
+    background: #fff3cf;
+    border-color: #d5ad28;
+}
+
+
+/* เวลา */
+
+.slot-time {
+    font-weight: 700;
+    color: #45206b;
+    font-size: 15px;
+}
+
+
+/* บริการ */
+
+.slot-service {
+    display: block;
+    margin-top: 3px;
+    font-size: 13px;
+    color: #555;
+}
+
+
+/* ราคา */
+
+.slot-price {
+    display: block;
+    margin-top: 3px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #c59616;
+}
+
+
+/* วันที่ถูกเลือก */
+
+.calendar-slot.selected {
+    background: #d8b13a;
+    border-color: #d8b13a;
+}
+
+.calendar-slot.selected .slot-time,
+.calendar-slot.selected .slot-service,
+.calendar-slot.selected .slot-price {
+    color: white;
+}
+
+
+/* มือถือ */
+
+@media (max-width: 600px) {
+
+    .booking-calendar {
+        grid-template-columns: 1fr;
+    }
+
+}/* =====================================================
+   CALENDAR 14 DAYS
+   ===================================================== */
+
+.booking-calendar {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 15px;
+}
+
+
+/* การ์ดแต่ละวัน */
+
+.calendar-day {
+    background: #ffffff;
+    border: 1px solid #e8e1ef;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 3px 12px rgba(60, 30, 90, 0.06);
+}
+
+
+/* วันที่มีคิว */
+
+.calendar-day.has-slot {
+    border-color: #e2d2a3;
+}
+
+
+/* วันที่ไม่มีคิว */
+
+.calendar-day.no-slot {
+    background: #f8f8f8;
+    opacity: 0.7;
+}
+
+
+/* วันที่ */
+
+.calendar-date {
+    color: var(--purple);
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+
+/* ไม่มีคิว */
+
+.no-slot-text {
+    color: #999;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+
+/* =====================================================
+   ปุ่มคิว
+   ===================================================== */
+
+.calendar-slot {
+    display: block;
+    width: 100%;
+
+    margin-top: 8px;
+    padding: 10px 12px;
+
+    border: 1px solid #e1cf91;
+    border-radius: 10px;
+
+    background: #fffaf0;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease,
+        background 0.15s ease;
+}
+
+
+/* Hover */
+
+.calendar-slot:hover {
+    background: #fff3cf;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 4px 10px rgba(100, 70, 20, 0.12);
+}
+
+
+/* เวลา */
+
+.slot-time {
+    display: block;
+
+    color: var(--purple);
+
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+/* ชื่อบริการ */
+
+.slot-service {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #555;
+
+    font-size: 13px;
+}
+
+
+/* ราคา */
+
+.slot-price {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #c49a20;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   คิวที่เลือก
+   ===================================================== */
+
+.calendar-slot.selected {
+    background: #d9b43a;
+    border-color: #d9b43a;
+
+    box-shadow:
+        0 4px 12px rgba(180, 140, 30, 0.25);
+}
+
+.calendar-slot.selected .slot-time,
+.calendar-slot.selected .slot-service,
+.calendar-slot.selected .slot-price {
+    color: #ffffff;
+}
+
+
+/* =====================================================
+   มือถือ
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    .booking-calendar {
+        grid-template-columns: 1fr;
+    }
+
+}/* =====================================================
+   แก้หน้าตาปุ่มคิว - FORCE
+   ===================================================== */
+
+.booking-calendar .calendar-slot {
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+
+    margin-top: 8px !important;
+    padding: 10px 12px !important;
+
+    border: 1px solid #dfc875 !important;
+    border-radius: 10px !important;
+
+    background: #fffaf0 !important;
+
+    text-align: left !important;
+
+    cursor: pointer !important;
+
+    font-family: inherit !important;
+    font-size: 14px !important;
+
+    appearance: none !important;
+    -webkit-appearance: none !important;
+
+    color: #45206b !important;
+}
+
+
+.booking-calendar .calendar-slot:hover {
+    background: #fff2c9 !important;
+    border-color: #cda92b !important;
+}
+
+
+.booking-calendar .slot-time {
+    display: block !important;
+
+    font-weight: 700 !important;
+    font-size: 15px !important;
+
+    color: #45206b !important;
+}
+
+
+.booking-calendar .slot-service {
+    display: block !important;
+
+    margin-top: 3px !important;
+
+    font-size: 13px !important;
+    color: #555 !important;
+}
+
+
+.booking-calendar .slot-price {
+    display: block !important;
+
+    margin-top: 3px !important;
+
+    font-size: 13px !important;
+    font-weight: 700 !important;
+
+    color: #c49a20 !important;
+}
+
+
+.booking-calendar .calendar-slot.selected {
+    background: #d9b43a !important;
+    border-color: #d9b43a !important;
+}
+
+
+.booking-calendar .calendar-slot.selected .slot-time,
+.booking-calendar .calendar-slot.selected .slot-service,
+.booking-calendar .calendar-slot.selected .slot-price {
+    color: #ffffff !important;
+}/* ช่องเลือกบริการ */
+/* ช่องเลือกบริการ */
+#service {
+    border: 2px solid #c9a227 !important;
+    background-color: #fffaf0 !important;
+    color: var(--purple) !important;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* เลือกบริการแล้ว */
+#service.service-selected {
+    background-color: #f3e8ff !important;
+    border-color: var(--purple) !important;
+    color: var(--purple) !important;
+}
+
+/* ตอนกด */
+#service:focus {
+    border-color: var(--purple) !important;
+    box-shadow: 0 0 0 0.2rem rgba(98, 63, 128, 0.15) !important;
+}#service.has-value {
+    background-color: #f3e8ff !important;
+    border: 2px solid var(--purple) !important;
+    color: var(--purple) !important;
+    font-weight: 700;
+}.booking-slot.selected {
+    background-color: #f3e8ff !important;
+    border: 2px solid var(--purple) !important;
+    color: var(--purple) !important;
+}
+.booking-slot.selected .slot-service,
+.booking-slot.selected .slot-price {
+    color: var(--purple) !important;
+}.selected-booking-info {
+    margin: 15px 0;
+    padding: 16px 20px;
+    background: #f3e8ff;
+    border: 2px solid var(--purple);
+    border-radius: 14px;
+    color: var(--purple);
+}
+
+.selected-booking-title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 8px;
+}.selected-booking-info {
+    margin: 15px 0;
+    padding: 16px 20px;
+    background: #f3e8ff;
+    border: 2px solid var(--purple);
+    border-radius: 14px;
+    color: var(--purple);
+}
+
+.selected-booking-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}.booking-slot.selected::after {
+    content: "✓ เลือกแล้ว";
+    display: block;
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--purple);
+}.hero-contact {
+    margin-top: 18px;
+    font-size: 17px;
+    color: var(--purple);
+    font-weight: 600;
+}
+
+.hero-contact i {
+    margin-right: 6px;
+}
+
+.hero-contact a {
+    color: var(--purple);
+    text-decoration: none;
+}
+
+.hero-contact a:hover {
+    color: var(--gold);
+}
