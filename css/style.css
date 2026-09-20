@@ -1161,3 +1161,21 @@ z-index:1000;
 .hero-contact a:hover {
     color: var(--gold);
 }
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 28px;
+}
+
+.promo-price {
+    color: #d4af37;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.promo-text {
+    color: #8b5a00;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: -10px;
+}
